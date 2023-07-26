@@ -66,16 +66,16 @@ exports.config = {
             // 5 instances get started at a time.
             maxInstances: 5,
             //
-            //browserName: "chrome",
-            browserName: "MicrosoftEdge",
-            /* "goog:chromeOptions": {
-                 args: ["--no-sandbox", "--disable-dev-shm-usage"] */
-            /*process.argv.indexOf("--headless") > -1
-                ? ["--headless"]
-                : process.argv.indexOf("--debug") > -1
-                    ? ["window-size=1440,800", "--auto-open-devtools-for-tabs"]
-                    : ["window-size=1440,800"] */
-            //}, 
+            browserName: "chrome",
+            //browserName: "MicrosoftEdge",
+            "goog:chromeOptions": {
+                args: ["--no-sandbox", "--disable-dev-shm-usage"]
+                /*process.argv.indexOf("--headless") > -1
+                    ? ["--headless"]
+                    : process.argv.indexOf("--debug") > -1
+                        ? ["window-size=1440,800", "--auto-open-devtools-for-tabs"]
+                        : ["window-size=1440,800"] */
+            },
             acceptInsecureCerts: true
             // If outputDir is provided WebdriverIO can capture driver session logs
             // it is possible to configure which logTypes to include/exclude.
